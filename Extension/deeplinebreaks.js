@@ -6,9 +6,7 @@ newBtn.style = "cursor: pointer; position: absolute; left: 60px; top: 5px;";
 textareaAButtonBar.appendChild(newBtn);
 
 document.getElementById("btnDeepLineBreak").addEventListener("click", function insertTest() {
-    var textareaA = document.getElementById("source-dummydiv").previousElementSibling
-    var tmpString = textareaA.value
-    tmpString = tmpString.replace(/[\n\r]/g,' ');
-    textareaA.value = tmpString;
-    textareaA.focus();
+    var oldUrl = document.location.href
+    var newUrl = oldUrl.replace(/%0A/g, ' ')
+    document.location.href = newUrl
 })
