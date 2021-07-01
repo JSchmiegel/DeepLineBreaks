@@ -1,7 +1,7 @@
 var textareaAButtonBar = document.getElementById("source-dummydiv").parentNode.nextElementSibling;
 var newBtn = document.createElement("a");
 newBtn.id = "btnDeepLineBreak";
-newBtn.innerHTML = "<img src='https://flaticons.net/custom.php?i=vqYSz7T449czIQIeIOvcWgv5YiE&format=png&size=256' height='22'>";
+newBtn.innerHTML = "<img src='https://addons.cdn.mozilla.net/user-media/addon_icons/2710/2710544-64.png?modified=cbfd9850' height='22'>";
 newBtn.style = "cursor: pointer; position: absolute; left: 60px; top: 5px;";
 textareaAButtonBar.appendChild(newBtn);
 
