@@ -6,7 +6,23 @@ newBtn.style = "cursor: pointer; position: absolute; left: 20px;";
 toolbarBar[0].appendChild(newBtn);
 
 document.getElementById("btnDeepLineBreak").addEventListener("click", function insertTest() {
-    var oldUrl = document.location.href
-    var newUrl = oldUrl.replace(/%0A/g, ' ')
-    document.location.href = newUrl
+    var threshold = 1300;
+    var textareaObject = document.getElementsByClassName("lmt__textarea lmt__source_textarea lmt__textarea_base_style")[0];
+
+    if (getCharactersInTextarea(textareaObject) >= threshold) {
+        // remove all linebreaks in the textarea
+        var tmpString = textareaObject.value;
+        tmpString = tmpString.replace(/[\n\r]/g,' ');
+        textareaObject.value = tmpString;
+        textareaObject.focus();
+    }else{
+        // remove all linebreaks in the url
+        var oldUrl = document.location.href
+        var newUrl = oldUrl.replace(/%0A/g, ' ')
+        document.location.href = newUrl
+    }
 })
+
+function getCharactersInTextarea(textareaObject) {
+    return(textareaObject.value.length)
+}
