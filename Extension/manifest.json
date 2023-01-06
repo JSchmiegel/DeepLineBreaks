@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "DeepLineBreaks",
-    "version": "1.3",
+    "version": "1.4",
   
     "description": "Adds a button that allows to delete line breaks in the textarea of DeepL.",
   
