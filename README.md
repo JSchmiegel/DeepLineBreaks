@@ -1,3 +1,4 @@
+**Note:** Due to constant changes in the site structe by deepl (which made the Add-on impossible to maintain) and me not using the Add-on anymore, this repo is archived.
 # DeepLineBreaks
 
 Firefox Add-on which adds a button that allows to delete line breaks in the textarea of DeepL. 
